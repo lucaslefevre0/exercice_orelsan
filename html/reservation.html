@@ -7,7 +7,7 @@
 
     <title>Document</title>
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
@@ -20,10 +20,137 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section>
+        <h1>LES DATES</h1>
+
+        <figure>
+          <img src="../imgs/orelsan_concert.jpg" alt="Orelsan_en_concert" />
+        </figure>
+
+        <div>
+          <h2>CONTACT</h2>
+
+          <address><a href="tel: +33 498 245 256">0498/245.256</a></address>
+
+          <a href="mailto:info@orelsan7th.com">info@orelsan7th.com</a>
+        </div>
+
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Ville</th>
+            <th>Disponibilités</th>
+            <th>Réservations</th>
+          </tr>
+
+          <tr>
+            <td>21 janvier 2018</td>
+            <td>Paris</td>
+            <td>Oui</td>
+            <td><a href="#">Tickets</a></td>
+          </tr>
+          <tr>
+            <td>25 janvier 2018</td>
+            <td>Bruxelles</td>
+            <td>Oui</td>
+            <td><a href="#">Tickets</a></td>
+          </tr>
+          <tr>
+            <td>8 février 2018</td>
+            <td>Lille</td>
+            <td>Non</td>
+            <td><a href="#">Tickets</a></td>
+          </tr>
+          <tr>
+            <td>9 février 2018</td>
+            <td>Caen</td>
+            <td>Oui</td>
+            <td><a href="#">Tickets</a></td>
+          </tr>
+          <tr>
+            <td>12 février 2018</td>
+            <td>Marseille</td>
+            <td>Oui</td>
+            <td><a href="#">Tickets</a></td>
+          </tr>
+          <tr>
+            <td>14 février 2018</td>
+            <td>Toulouse</td>
+            <td>Oui</td>
+            <td><a href="#">Tickets</a></td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="reserv">
+        <form action="#" method="post">
+          <h2>COORDONNÉES</h2>
+
+          <label for="lastname_fld">Nom</label>
+
+          <input id="lastname_fld" name="lastname_fld" type="text" />
+
+          <label for="firstname_fld">Prénom</label>
+
+          <input id="firstname_fld" name="firstname_fld" type="text" />
+
+          <label for="mail_fld">E-mail</label>
+          <input
+            id="mail_fld"
+            name="mail_fld"
+            type="email"
+            placeholder="me@domaine.be"
+          />
+
+          <label for="phone_fld">Téléphone</label>
+
+          <input type="tel" id="phone_fld" name="phone_fld" />
+
+          <h2>VOTRE TICKET</h2>
+
+          <label for="city_fld">Ville</label>
+
+          <select name="city_select" id="city_select">
+            <option value="Paris">Paris</option>
+            <option value="Bruxelles">Bruxelles</option>
+            <option value="Lille">Lille</option>
+            <option value="Caen">Caen</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Toulouse">Toulouse</option>
+          </select>
+
+          <label for="date_fld">Date du concert</label>
+
+          <input type="date" id="date_fld" name="date_fld" />
+
+          <label for="number_of_tickets">Nombre de tickets</label>
+
+          <input
+            type="number"
+            id="number_of_tickets"
+            name="number_of_tickets"
+            min="0"
+            max="10"
+          />
+
+          <h2>CRÉER UN COMPTE</h2>
+
+          <label for="login_fld">Login</label>
+          <input type="text" id="login_fld" name="login_fld" />
+
+          <label for="password_fld">Mot de passe</label>
+          <input type="password" id="password_fld" name="password_fld" />
+
+          <a href="./reservation.html">Annuler</a>
+          <button type="submit">Commander</button>
+        </form>
+      </section>
+    </main>
+
     <footer>
       <section>
-        <h1>Contact</h1>
+        <h1>CONTACT</h1>
         <address><a href="tel: +33 498 245 256">0498/245.256</a></address>
 
         <a href="mailto:info@orelsan7th.com">info@orelsan7th.com</a>
@@ -40,7 +167,7 @@
       </section>
 
       <section>
-        <h1>Navigation</h1>
+        <h1>NAVIGATION</h1>
         <nav>
           <ul>
             <li><a href="./index.html">Accueil</a></li>
