@@ -1,20 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+$main-font: "Montserrat", sans-serif;
+$titles-font: "Oswald", sans-serif;
+$max-width: 1440px;
 
-root {
-  font-size: 20px;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-/*HEADER*/
-
-main {
-  margin: 0;
-  padding: 0;
-}
+@import "./src/general";
+@import "./src/header";
+@import "./src/footer";
+@import "./src/content";
